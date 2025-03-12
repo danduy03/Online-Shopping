@@ -1,0 +1,36 @@
+<%@ page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<div class="container">
+    <h3>Order Details</h3>
+    <p>Order ID: ${order.id}</p>
+    <p>Customer: ${order.fullName}</p>
+    <p>Email: ${order.email}</p>
+    <p>Phone: ${order.phone}</p>
+    <p>Address: ${order.address}, ${order.commune}, ${order.district}, ${order.province}</p>
+    <p>Status: ${order.status}</p>
+    <p>Total: $${order.totalAmount}</p>
+    
+    <h4>Order Items</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <c:forEach items="${orderItems}" var="item">
+                <tr>
+                    <td>${item.product.name}</td>
+                    <td>$${item.price}</td>
+                    <td>${item.quantity}</td>
+                    <td>$${item.price * item.quantity}</td>
+                </tr>
+            </c:forEach>
+        </tbody>
+    </table>
+</div>

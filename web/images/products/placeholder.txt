@@ -1,0 +1,1 @@
+This directory contains product images. Please add actual product images here.

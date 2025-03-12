@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="40" viewBox="0 0 300 40" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <!-- Visa -->
+    <path d="M20 5h40v30H20z" fill="#1A1F71"/>
+    <path d="M31 15l-3 10h-4l3-10h4zm10 0l-2 6 4-6h4l-6 10h-4l2-10h2zm8 0v10h-4v-10h4z" fill="#FFF"/>
+    <!-- Mastercard -->
+    <path d="M70 5h40v30H70z" fill="#FF5F00"/>
+    <circle cx="80" cy="20" r="10" fill="#EB001B"/>
+    <circle cx="100" cy="20" r="10" fill="#F79E1B"/>
+    <!-- JCB -->
+    <path d="M120 5h40v30h-40z" fill="#0E4C96"/>
+    <path d="M130 15h4c2 0 4 1 4 3s-2 3-4 3h-4v-6z" fill="#FFF"/>
+    <!-- Bank Cards -->
+    <path d="M170 5h40v30h-40z" fill="#00A1E4"/>
+    <path d="M180 15h20v2h-20zm0 4h20v2h-20zm0 4h10v2h-10z" fill="#FFF"/>
+    <!-- QR Code -->
+    <path d="M220 5h40v30h-40z" fill="#000"/>
+    <path d="M230 15h5v5h-5zm10 0h5v5h-5zm-10 10h5v5h-5zm10 0h5v5h-5z" fill="#FFF"/>
+  </g>
+</svg>
